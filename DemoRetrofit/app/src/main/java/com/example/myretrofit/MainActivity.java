@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         AnhXa();
         apiInterface= Retrofitclient.getClient().create(ApiInterface.class);
-
-         btnDangNhap.setOnClickListener(new View.OnClickListener() {
+        btnDangNhap.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
               loginUser(v);

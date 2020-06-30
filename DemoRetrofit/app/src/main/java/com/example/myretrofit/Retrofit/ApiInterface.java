@@ -16,4 +16,5 @@ public interface ApiInterface {
     Call<List<StudentModel>> loginUser(@Field("SODIENTHOAI") String SODIENTHOAI
                                  ,@Field("MATKHAU")String MATKHAU);
 
+    //Có năm Annotation được tích hợp sẵn: @GET, @POST, @PUT, @DELETE và @HEAD
 }
