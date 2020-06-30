@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textVTiltle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập hệ thống"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTaiKhoan"
+        android:layout_below="@+id/textVTiltle"
+        android:hint="Tài khoản"
+        android:textSize="20sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMatKHau"
+        android:layout_below="@+id/txtTaiKhoan"
+        android:hint="Mật khẩu"
+        android:textSize="20sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMatKHau"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnDangKi"
+        android:layout_marginLeft="30dp"
+        android:text="Đăng kí"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtMatKHau"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:text="Đăng nhập"
+        android:id="@+id/btnDangNhap"
+        />
+
+</RelativeLayout>

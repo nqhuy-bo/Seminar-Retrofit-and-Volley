@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKiActivity">
+
+
+    <TextView
+        android:id="@+id/textVTiltleDK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng kí hệ thống"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        />
+
+    <ImageView
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textVTiltleDK"
+        android:id="@+id/ImageDK"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDKTaiKhoan"
+        android:layout_below="@+id/ImageDK"
+        android:hint="Tài khoản"
+        android:textSize="20sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDKMatKHau"
+        android:layout_below="@+id/txtDKTaiKhoan"
+        android:hint="Mật khẩu"
+        android:textSize="20sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDKMatKHau"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnOK"
+        android:layout_marginLeft="30dp"
+        android:text="OK"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtDKMatKHau"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:text="Hủy"
+        android:id="@+id/btnHuy"
+        />
+</RelativeLayout>
